@@ -15,12 +15,12 @@ def create_color(img_list, i, j, gray_sum, area, step):
                 img_list[x][y][z] = int(gray_sum // step) * step
 
 
-def create_img(img, out, area, step):
+def Create_IMG(img, out, area, step):
     """
     Принимает на вход исходное изображение, название преображенного файла,
     Размер блока и количество градаций серого,
     Возвращает преобразованное изображение.
-    >>> create_img("img.jpg", "res.jpg", 10, 50)
+    >>> Create_IMG("img.jpg", "res.jpg", 10, 50)
     """
     img_list = np.array(Image.open(img))
     pixels_count = len(img_list)
@@ -37,7 +37,7 @@ def create_img(img, out, area, step):
     Image.fromarray(img_list).save(out)
 
 
-create_img(input("name:"),
+Create_IMG(input("name:"),
            input("out_name:"),
            int(input("area:")),
            int(input("step:")))

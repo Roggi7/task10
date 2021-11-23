@@ -3,13 +3,25 @@ import numpy as np
 
 
 def create_color(img_list, i, j, gray_sum, area, step):
+    """
+    Принимает на вход пиксельную матрицу изображения,
+    Индексы текущего пикселя,
+    Размер блока и количество градаций серого,
+    Возвращая новую цветовую гамму для заданного размера матрицы.
+    """
     for x in range(i, i + area):
         for y in range(j, j + area):
             for z in range(3):
                 img_list[x][y][z] = int(gray_sum // step) * step
 
 
-def Create_IMG(img, out, area, step):
+def create_img(img, out, area, step):
+    """
+    Принимает на вход исходное изображение, название преображенного файла,
+    Размер блока и количество градаций серого,
+    Возвращает преобразованное изображение.
+    >>> create_img("img.jpg", "res.jpg", 10, 50)
+    """
     img_list = np.array(Image.open(img))
     pixels_count = len(img_list)
     width = len(img_list[1])
@@ -25,4 +37,7 @@ def Create_IMG(img, out, area, step):
     Image.fromarray(img_list).save(out)
 
 
-Create_IMG(input("name:"), input("out_name:"), int(input("area:")), int(input("step:")))
+create_img(input("name:"),
+           input("out_name:"),
+           int(input("area:")),
+           int(input("step:")))

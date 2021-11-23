@@ -21,7 +21,7 @@ repos for pyCharm task
 ![Исходник](https://github.com/Roggi7/task10/blob/main/img.jpg)
 
 Изображение после преобразования исходным фильтром:
-![Результат1](https://github.com/Roggi7/task10/blob/main/res1.png)
+![Результат1](https://github.com/Roggi7/task10/blob/main/res1.jpg)
 
 Изображение после преобразования изменённым фильтром:
-![Результат2](https://github.com/Roggi7/task10/blob/main/res.png)
+![Результат2](https://github.com/Roggi7/task10/blob/main/res.jpg)

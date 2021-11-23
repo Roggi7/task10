@@ -46,3 +46,4 @@ repos for pyCharm task
 ----
 Проведена отладка. Выявлены размеры, тип изображения и дополнительные характеристики.
 ![debug](https://github.com/Roggi7/task10/blob/main/debug.png)
+----
